@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,400;12..72,600;12..72,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+
+    --btn-primary-color: white;
+    --btn-primary-text-color: #167B63;
+
+    --btn-secundary-color: tranparent;
+    --btn-secundary-text-color: white;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Texturina', serif;
+    color: white;
+
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    color: white;
+
+    padding: 1rem;
+
+}
+
+header div.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div.container ul {
+    display: flex;
+    gap: 2.9rem;
+
+    list-style: none;
+}
+
+header div.container a {
+    color: inherit;
+}
+
+header div.container .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    
+    font-size: 2.4rem;
+}
+
+header div.container .logo span {
+    margin-bottom: .5rem;
+}
+
+.btn-primary {
+    border: none;
+    background-color: var(--btn-primary-color);
+    color: var(--btn-primary-text-color);
+    border-radius: .5rem;
+
+    font-family: inherit;
+    font-weight: 600;
+
+    width: 15.4rem;
+    height: 4.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: .3s all;
+}
+
+.btn-primary:hover {
+    background-color: #167B63;
+    color: white;
+}
+
+header div.container ul li {
+    transition: .3s all;
+}
+
+header div.container ul li:hover {
+    background-color: yellow;
+    color: #167B63;
+    padding: 0 1rem;
+
+    font-weight: 600;
+}
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+main {
+    min-height: 60vh;
+}
+
+.title, .description, .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    margin-top: 16rem;
+    width: 100%;
+}
+
+.title h1 {
+    font-size: 5rem;
+    text-align: center;
+    width: 60%;
+}
+
+.description {
+    width: 100%;
+}
+
+.description p {
+    text-align: center;
+    width: 43%;
+}
+
+.controls {
+    gap: 1.6rem;
+
+    margin-top: 4rem;
+}
+
+.btn-secundary {
+    border: 1px solid white;
+    background-color: var(--btn-secundary-color);
+    color: var(--btn-secundary-text-color);
+    border-radius: .5rem;
+
+    font-family: inherit;
+    font-weight: 600;
+
+    width: 15.4rem;
+    height: 4.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: .3s all;
+}
+
+.btn-secundary:hover {
+    background-color: rgba(255, 255, 255, 0.295);
+}
+
+footer {
+    width: 100%;
+}
+
+footer div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
